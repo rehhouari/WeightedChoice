@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Godot4ChanceBasedChoiceGodot4ChanceBasedChoice"
+config/name="Weighted Choice"
 run/main_scene="res://addons/weighted_choice/demo/loot_box_example.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
+config/icon="res://icon.png"
 
 [display]
 
