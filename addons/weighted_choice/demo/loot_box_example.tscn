@@ -1,0 +1,349 @@
+[gd_scene load_steps=18 format=3 uid="uid://ct50pprqfhtpi"]
+
+[ext_resource type="Script" path="res://addons/weighted_choice/demo/lootbox.gd" id="1_a5me8"]
+[ext_resource type="Texture2D" uid="uid://biicl6o7uno0q" path="res://addons/weighted_choice/demo/Chests.png" id="2_61pki"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3b1n"]
+atlas = ExtResource("2_61pki")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s87vt"]
+atlas = ExtResource("2_61pki")
+region = Rect2(240, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yurex"]
+atlas = ExtResource("2_61pki")
+region = Rect2(288, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmsgx"]
+atlas = ExtResource("2_61pki")
+region = Rect2(384, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4og2n"]
+atlas = ExtResource("2_61pki")
+region = Rect2(432, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ivt1"]
+atlas = ExtResource("2_61pki")
+region = Rect2(336, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4g24"]
+atlas = ExtResource("2_61pki")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8qjv"]
+atlas = ExtResource("2_61pki")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewh4q"]
+atlas = ExtResource("2_61pki")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7p1f"]
+atlas = ExtResource("2_61pki")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n52p6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3b1n")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s87vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yurex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmsgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4og2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ivt1")
+}],
+"loop": false,
+"name": &"open",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3b1n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4g24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8qjv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewh4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7p1f")
+}],
+"loop": true,
+"name": &"shake",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_0enfg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ItemSprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ItemSprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ItemSprite2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(303, 172)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ResetButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_1oyc2"]
+resource_name = "close"
+length = 5.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [&"open"],
+"method": &"play_backwards"
+}, {
+"args": [&"idle"],
+"method": &"play"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ItemSprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ItemLabel:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ResetButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_mw7va"]
+resource_name = "open"
+length = 5.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [&"shake"],
+"method": &"play"
+}, {
+"args": [&"open"],
+"method": &"play"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ItemSprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.5, 2.7),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(2, 2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ItemSprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ItemSprite2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.5, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(303, 172), Vector2(303, 127)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ItemLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ResetButton:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3kcay"]
+_data = {
+"RESET": SubResource("Animation_0enfg"),
+"close": SubResource("Animation_1oyc2"),
+"open": SubResource("Animation_mw7va")
+}
+
+[node name="LootBoxExample" type="Node2D"]
+script = ExtResource("1_a5me8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -6.0
+offset_top = -12.0
+offset_right = 583.0
+offset_bottom = 333.0
+color = Color(0.270588, 0.156863, 0.235294, 1)
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(305, 185)
+scale = Vector2(2.9375, 2.9375)
+sprite_frames = SubResource("SpriteFrames_n52p6")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 574.0
+offset_bottom = 320.0
+ignore_texture_size = true
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3kcay")
+}
+
+[node name="ItemLabel" type="Label" parent="."]
+visible = false
+offset_left = 201.0
+offset_top = 57.0
+offset_right = 404.0
+offset_bottom = 83.0
+text = "Copper Sword"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(303, 172)
+region_rect = Rect2(10, 0, 20, 20)
+
+[node name="ResetButton" type="Button" parent="."]
+visible = false
+offset_left = 268.0
+offset_top = 277.0
+offset_right = 319.0
+offset_bottom = 308.0
+text = "Reset"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
