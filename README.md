@@ -12,7 +12,7 @@ This Godot 4 plugin provide a static `WeightedChoice.pick()` method you can call
 
 > Includes [in-editor documentation](https://i.imgur.com/YAJ6XhG.png)!
 
-`pick(dict: Dictionary, weights_key: Variant)`
+`pick(dict: Dictionary, weight_key: Variant)`
 
 Takes a dictionary `dict`, and randomly picks one item based based on weights. 
 
