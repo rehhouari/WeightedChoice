@@ -13,7 +13,6 @@ config_version=5
 config/name="Godot4ChanceBasedChoiceGodot4ChanceBasedChoice"
 run/main_scene="res://addons/weighted_choice/demo/loot_box_example.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
 
 [display]
 

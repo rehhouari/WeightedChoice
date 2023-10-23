@@ -36,6 +36,7 @@ var items = {
 
 var opened = false
 var loot
+
 func open():
 	opened = true
 	loot = items[WeightedChoice.pick(items, "rarity")]
