@@ -1,4 +1,9 @@
-# WeightedChoice
+<div align="center">
+<img src="icon.png" width="150"/>
+</div>
+
+# Weighted Choice 
+
 
 This Godot 4 plugin provide a static `WeightedChoice.pick()` method you can call to randomly choose an item from a dictionary based on weights. 
 
@@ -49,11 +54,11 @@ var key = WeightedChoice.pick(dict, "rarity") # "copper", "silver", or "gold"
 
 ```
 
-## LootDemo
+## Loot Box Demo
 
-![screenshot of the lootbox](https://i.imgur.com/Omk23Pc.png)
+![screenshot of the loot box demo](https://i.imgur.com/Omk23Pc.png)
 
-You can check the [lootbox demo](https://github.com/rehhouari/WeightedChoice/tree/main/addons/weighted_choice/demo) for an example on how to use this plugin
+You can check the [loot box demo](https://github.com/rehhouari/WeightedChoice/tree/main/addons/weighted_choice/demo) for an example on how to use this plugin
 
 > **When installing, you can uncheck the "demo" folder**
 
