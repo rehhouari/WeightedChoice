@@ -49,10 +49,13 @@ var key = WeightedChoice.pick(dict, "rarity") # "copper", "silver", or "gold"
 
 ```
 
-## Installation
+## LootDemo
 
-When installing, you can uncheck the "demo" folder
+![screenshot of the lootbox](https://i.imgur.com/Omk23Pc.png)
 
+You can check the [lootbox demo](https://github.com/rehhouari/WeightedChoice/tree/main/addons/weighted_choice/demo) for an example on how to use this plugin
+
+> **When installing, you can uncheck the "demo" folder**
 
 ## Credits
 
