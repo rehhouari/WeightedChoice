@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0jrhvuff1uwr"
-path="res://.godot/imported/iron_sword.png-f655e21994a3776623cc11b093df96c0.ctex"
+path="res://.godot/imported/iron_sword.png-c40e6914f6a8e966ffc4d2f9a12d99fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/weighted_choice/demo/iron_sword.png"
-dest_files=["res://.godot/imported/iron_sword.png-f655e21994a3776623cc11b093df96c0.ctex"]
+source_file="res://addons/weighted_choice/demo/sprites/iron_sword.png"
+dest_files=["res://.godot/imported/iron_sword.png-c40e6914f6a8e966ffc4d2f9a12d99fe.ctex"]
 
 [params]
 

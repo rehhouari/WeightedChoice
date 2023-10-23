@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4njor6814bhx"
-path="res://.godot/imported/diamond_sword.png-5a44c4481c08ec54f13e660f85448c21.ctex"
+path="res://.godot/imported/diamond_sword.png-1aae9c799b9ec45fff305ebb1d641fb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/weighted_choice/demo/diamond_sword.png"
-dest_files=["res://.godot/imported/diamond_sword.png-5a44c4481c08ec54f13e660f85448c21.ctex"]
+source_file="res://addons/weighted_choice/demo/sprites/diamond_sword.png"
+dest_files=["res://.godot/imported/diamond_sword.png-1aae9c799b9ec45fff305ebb1d641fb0.ctex"]
 
 [params]
 

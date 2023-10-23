@@ -10,25 +10,25 @@ const Rarity = {
 var items = {
 	"copper_sword": {
 		"name": "Copper Sword",
-		"sprite": preload("res://addons/weighted_choice/demo/copper_sword.png"),
+		"sprite": preload("res://addons/weighted_choice/demo/sprites/copper_sword.png"),
 		"damage": 10,
 		"rarity": Rarity.COMMON
 	},
 	"iron_sword": {
 		"name": "Iron Sword",
-		"sprite": preload("res://addons/weighted_choice/demo/iron_sword.png"),
+		"sprite": preload("res://addons/weighted_choice/demo/sprites/iron_sword.png"),
 		"damage": 25,
 		"rarity": Rarity.UNCOMMON
 	},
 	"gold_sword": {
 		"name": "Gold Sword",
-		"sprite": preload("res://addons/weighted_choice/demo/gold_sword.png"),
+		"sprite": preload("res://addons/weighted_choice/demo/sprites/gold_sword.png"),
 		"damage": 50,
 		"rarity": Rarity.RARE
 	},
 	"diamond_sword": {
 		"name": "Diamond Sword",
-		"sprite": preload("res://addons/weighted_choice/demo/diamond_sword.png"),
+		"sprite": preload("res://addons/weighted_choice/demo/sprites/diamond_sword.png"),
 		"damage": 80,
 		"rarity": Rarity.LEGENDARY
 	}

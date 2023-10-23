@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biicl6o7uno0q"
-path="res://.godot/imported/Chests.png-750544f3cf0f8861fc1e58213630e647.ctex"
+uid="uid://c6fcfm54auk24"
+path="res://.godot/imported/copper_sword.png-c1698f7115d81b126e7db535c91c167a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/weighted_choice/demo/Chests.png"
-dest_files=["res://.godot/imported/Chests.png-750544f3cf0f8861fc1e58213630e647.ctex"]
+source_file="res://addons/weighted_choice/demo/sprites/copper_sword.png"
+dest_files=["res://.godot/imported/copper_sword.png-c1698f7115d81b126e7db535c91c167a.ctex"]
 
 [params]
 

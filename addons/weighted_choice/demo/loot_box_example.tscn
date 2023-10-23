@@ -1,46 +1,46 @@
 [gd_scene load_steps=18 format=3 uid="uid://ct50pprqfhtpi"]
 
 [ext_resource type="Script" path="res://addons/weighted_choice/demo/lootbox.gd" id="1_a5me8"]
-[ext_resource type="Texture2D" uid="uid://biicl6o7uno0q" path="res://addons/weighted_choice/demo/Chests.png" id="2_61pki"]
+[ext_resource type="Texture2D" uid="uid://biicl6o7uno0q" path="res://addons/weighted_choice/demo/sprites/Chests.png" id="2_givau"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b3b1n"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(0, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s87vt"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(240, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yurex"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(288, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vmsgx"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(384, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4og2n"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(432, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ivt1"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(336, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b4g24"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(48, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8qjv"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(96, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ewh4q"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(144, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7p1f"]
-atlas = ExtResource("2_61pki")
+atlas = ExtResource("2_givau")
 region = Rect2(192, 0, 48, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n52p6"]
