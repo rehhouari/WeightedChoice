@@ -62,6 +62,11 @@ var key = WeightedChoice.pick(dict, "rarity") # "copper", "silver", or "gold"
 
 You can check the [loot box demo](https://github.com/rehhouari/WeightedChoice/tree/main/addons/weighted_choice/demo) for an example on how to use this plugin
 
+
+## Installation
+
+Install from the [Asset Library](https://godotengine.org/asset-library/asset/2290), or clone the repository and move copy the [weighted_choice folder](addons/weighted_choice/) into your addons folder.
+
 > **When installing, you can uncheck the "demo" folder**
 
 ## Credits
