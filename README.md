@@ -77,6 +77,7 @@ Copyright (c) 2023 Rafik El Hadi Houari
 
 Uses code from Mickeon
 https://github.com/godotengine/godot-proposals/issues/3948#issuecomment-1035074260
+mentioend in: https://youtu.be/lckgjXM3CeE
 
 Demo assets:
 
