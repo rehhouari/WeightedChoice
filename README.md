@@ -58,9 +58,11 @@ var key = WeightedChoice.pick(dict, "rarity") # "copper", "silver", or "gold"
 
 ## Loot Box Demo
 
-![screenshot of the loot box demo](https://i.imgur.com/Omk23Pc.png)
+[![screenshot of the loot box demo](https://i.imgur.com/Omk23Pc.png)](https://pigeonivy.itch.io/godot-4-loot-box-demo)
 
 You can check the [loot box demo](https://github.com/rehhouari/WeightedChoice/tree/main/addons/weighted_choice/demo) for an example on how to use this plugin
+
+> [Try it in the browser](https://pigeonivy.itch.io/godot-4-loot-box-demo)
 
 
 ## Installation
