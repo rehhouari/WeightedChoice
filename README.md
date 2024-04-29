@@ -5,7 +5,7 @@
 # Weighted Choice 
 
 
-This Godot 4 plugin provide a static `WeightedChoice.pick()` method you can call to randomly choose an item from a dictionary based on weights. 
+This Godot 4 plugin provides a static `WeightedChoice.pick()` method you can call to randomly choose an item from a dictionary based on weights. 
 
 
 ## Usage: 
