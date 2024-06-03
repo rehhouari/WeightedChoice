@@ -67,7 +67,7 @@ You can check the [loot box demo](https://github.com/rehhouari/WeightedChoice/tr
 
 ## Installation
 
-Install from the [Asset Library](https://godotengine.org/asset-library/asset/2290), or clone the repository and move copy the [weighted_choice folder](addons/weighted_choice/) into your addons folder.
+Install from the [Asset Library](https://godotengine.org/asset-library/asset/2290), or clone the repository and copy the [weighted_choice folder](addons/weighted_choice/) into your addons folder.
 
 > **When installing, you can uncheck the "demo" folder**
 
